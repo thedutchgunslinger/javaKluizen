@@ -13,17 +13,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+//      maak een x aantal kluizen aan
         KluizenBeheer.maakKluizen(12);
         optieMenu();
 
     }
 
     static void optieMenu() {
+//        laat het menu zien
         System.out.println("1: Ik wil weten hoeveel kluizen nog vrij zijn");
         System.out.println("2: Ik wil een nieuwe kluis");
         System.out.println("3: Ik wil even iets uit mijn kluis halen");
         System.out.println("4: Ik geef mijn kluis terug");
         System.out.println("5: Programma afsluiten");
+//        vraag de gebruiker om een van de menu opties
         Scanner option = new Scanner(System.in);
         switch (option.nextInt()) {
             case 1 -> {
@@ -53,6 +56,7 @@ public class Main {
             default -> System.exit(0);
         }
     }
+//    vraag de gebruiker om het kluis nummer
     static int getKluisNummer(){
         System.out.println("voer kluis nummer in:");
         Scanner scanner = new Scanner(System.in);
